@@ -1,0 +1,654 @@
+@font-face {
+  font-family: font_1;
+  src: url(../fonts/Gotham-Bold.otf); 
+}
+
+@font-face {
+  font-family: font_2;
+  src: url(../fonts/GothamOffice-Regular.otf); 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "font_1";
+  color: #56018D;
+  background-color: #E8E8E7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  font-family: "font_2" ;
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav-item{font-size: 20px}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    display: flex;          /* Makes the container a flex container */
+    align-items: center;    /* Vertically centers the content */
+    font-size: 2rem;
+}
+
+.logo span {
+    margin-left: 15px;     /* Adds some space between the text and the image */
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 2vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  /*height: 80vh; */
+  flex-wrap: wrap;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.circle-image {
+    width: 400px;               /* Define width */
+    height: 400px;              /* Define height */
+    border-radius: 50%;         /* Make it circle */
+    overflow: hidden;           /* Clip the overflowing parts */
+    display: flex;
+    align-itmes:center;
+    justify-content: center;
+}
+
+.circle-image img {
+    display: block;             /* Remove default spaces */
+    width: 100%;               /* Cover the container */
+    height: 100%;
+    margin:auto;
+    object-fit: cover;  
+    object-position: center;        /* Preserve the aspect ratio */
+}
+
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.about-containers,
+.about-details-container {
+  display: flex;
+} 
+.about-pic {
+  border-radius: 2rem;
+} 
+
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+} 
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+li data-text{
+  color: black;
+}
+
+/* EXPERIENCE SECTION */
+
+h3{
+  color: rgb(85, 85, 85);
+}
+
+#experience {
+  position: relative;
+  height: auto;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
+#projects {
+  position: relative;
+  overflow: visible;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    color: #555;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* For tablets and medium-sized devices */
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    /* Navigation Bar */
+    #desktop-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #desktop-nav .logo span {
+        display: block;
+    }
+
+    #desktop-nav .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #desktop-nav .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    /* Profile Section */
+    
+    #profile .section__text__p1,
+    #profile .title,
+    #profile .section__text__p2 {
+        text-align: center;
+    }
+
+    #profile{
+      text-align: right;
+    }
+
+    #socials img {
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .about_container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .timeline {
+        margin: 20px 0;
+    }
+
+    /* Experience Section */
+    .about-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;  /* Adjust this value to set the gap between project containers */
+    width: 100%;     /* Make sure the container takes the full width available */
+   }
+
+      /* If want to ensure that the project image always fits its container */
+      .project-img {
+          width: 100%;
+          height: auto;
+      }
+
+
+    .experience-details-container .about-containers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Projects Section */
+    .experience-details-container .details-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .details-container .article-container {
+        text-align: center;
+    }
+
+    .details-container .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer nav .nav-links-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+
+
+/*for iPad Screens */
+@media (max-width: 1024px) {
+  
+
+  #desktop-nav .logo span {
+        font-size: 19px; /* adjust as needed */
+    }
+
+    #desktop-nav .nav-links li a {
+        font-size: 15px; /* adjust as needed */
+    }
+
+
+    /* Projects Section */
+    .experience-details-container .about-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .details-container.color-container {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .details-container.color-container .article-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .details-container.color-container {
+        flex: 0 0 100%; /* Don't allow the project containers to grow or shrink */
+        max-width: 100%; /* Ensure they don't exceed 100% width */
+    }
+
+} 
+
+#experience {
+    margin-bottom: 100px; /* Adjust value as needed */
+}
+
+
+
+@media (max-width: 1300px) {
+    .profile-pic {
+        margin-right: 20px; 
+    }
+
+
+    .experience-details-container {
+        flex-direction: column;
+    }
+
+    .details-container {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+} 
+
+
+/* For mobile devices */
+@media (max-width: 770px) {
+
+    .circle-image {
+      width: 100px;
+      height: 100px;
+   }
+
+   #profile{text-align: center;}
+
+   .navbar {
+    z-index: 2000; /* or another suitable high number */
+}
+
+  #profile {
+    height: auto;
+    z-index: 500;  /* or a number lower than the navbar's z-index */
+  }
+
+  .navbar-toggler-icon {
+    background-color: transparent; /* Remove the existing background-image */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';  /* Create bars using pseudo-elements */
+    display: block;
+    width: 24px; /* Width of the bars */
+    height: 2px; /* Height of the bars */
+    background-color: #333; /* Color of the bars */
+    margin: 7px 0; /* Spacing between bars */
+}
+  .nav-item{
+    text-align: center;
+    font-size: 20px;
+  }
+
+   h1, h2, p {
+      font-size: adjust-as-needed;
+   }
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+section, .col-md-6, #socials{
+    border: 0px solid red;
+    height: auto;
+}
+
+
+
+/*Special css for contact.html*/
+.float-left {
+    float: left;
+}
+
+
+
