@@ -631,6 +631,9 @@ input[type="submit"]:hover {
    h1, h2, p {
       font-size: adjust-as-needed;
    }
+   .navbar-brand{
+    margin-left: 0px !important;
+   }
 }
 
 img {
