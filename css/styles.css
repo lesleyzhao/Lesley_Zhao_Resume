@@ -603,7 +603,7 @@ input[type="submit"]:hover {
 
    .navbar {
     z-index: 2000; /* or another suitable high number */
-}
+  }
 
   #profile {
     height: auto;
@@ -612,7 +612,7 @@ input[type="submit"]:hover {
 
   .navbar-toggler-icon {
     background-color: transparent; /* Remove the existing background-image */
-}
+  }
 
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
@@ -627,12 +627,20 @@ input[type="submit"]:hover {
     text-align: center;
     font-size: 20px;
   }
+  .nav-item .nav-link{
+    margin-left: 90px ;
+  }
+
 
    h1, h2, p {
       font-size: adjust-as-needed;
    }
    .navbar-brand{
     margin-left: 0px !important;
+   }
+
+   #introduction{
+    font-size: 14px !important;
    }
 }
 
