@@ -309,6 +309,60 @@ article .icon {
   cursor: default;
 }
 
+/* Timeline Section */
+    .timeline-area{
+      margin: 90px auto;
+      width:  500px;
+      border-left: 2px solid #ccc;
+      padding: 0 20px 0 30px;
+    }
+    .card{
+      background-color: white;
+      padding: 10px 25px;
+      font-size: 16px;
+      border: 1px solid grey;
+      line-height: 1.7;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .card:before{
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 3px solid black;
+      position: absolute;
+      top: 10px;
+      left: -42px;
+    }
+    .card:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent #ddd transparent transparent;
+      border-width: 8px;
+      position: absolute;
+      left: -17px;
+      top:10px;
+    }
+    .card h2{
+      margin: 0;
+      text-align: left;
+      font-size: 30px;
+      /*text-transform: uppercase; */
+    }
+    .card h3{
+      font-size: 20px;
+      color: #56018D;
+    }
+    .card h4{
+      font-size: 20px;
+      color: rgb(85, 85, 85) ;
+    }
+
 /* PROJECTS SECTION */
 
 
@@ -489,7 +543,6 @@ input[type="submit"]:hover {
           height: auto;
       }
 
-
     .experience-details-container .about-containers {
         display: flex;
         flex-direction: column;
@@ -532,8 +585,15 @@ input[type="submit"]:hover {
 /*for iPad Screens */
 @media (max-width: 1024px) {
   
+   .timeline-area{
+      margin: 90px auto;
+      width:  500px;
+      border-left: 2px solid #ccc;
+      padding: 0 20px 0 30px;
+    }
 
-  #desktop-nav .logo span {
+
+   #desktop-nav .logo span {
         font-size: 19px; /* adjust as needed */
     }
 
@@ -566,7 +626,16 @@ input[type="submit"]:hover {
         max-width: 100%; /* Ensure they don't exceed 100% width */
     }
 
+    .nav-item{
+      font-size: 18px;
+    }
+    .container img{
+      margin-top: 60px;
+    }
+
 } 
+
+
 
 #experience {
     margin-bottom: 100px; /* Adjust value as needed */
@@ -588,13 +657,19 @@ input[type="submit"]:hover {
         flex-basis: 100%;
         margin-bottom: 20px;
     }
+    .timeline-area{
+      margin: 90px auto;
+      width:  500px;
+      border-left: 2px solid #ccc;
+      padding: 0 20px 0 30px;
+    }
 } 
 
 
 /* For mobile devices */
 @media (max-width: 770px) {
 
-    .circle-image {
+   .circle-image {
       width: 100px;
       height: 100px;
    }
@@ -614,15 +689,15 @@ input[type="submit"]:hover {
     background-color: transparent; /* Remove the existing background-image */
   }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
     content: '';  /* Create bars using pseudo-elements */
     display: block;
     width: 24px; /* Width of the bars */
     height: 2px; /* Height of the bars */
     background-color: #333; /* Color of the bars */
     margin: 7px 0; /* Spacing between bars */
-}
+  }
   .nav-item{
     text-align: center;
     font-size: 20px;
@@ -642,7 +717,28 @@ input[type="submit"]:hover {
    #introduction{
     font-size: 14px !important;
    }
+
+   .timeline-area{
+      margin: 90px auto;
+      width:  auto;
+      border-left: 2px solid #ccc;
+      padding: 0 20px 0 30px;
+    }
+
+    .card h2{
+      font-size: 20px;
+    }
+
+    .card h3{
+      font-size: 17px;
+    }
+    .card h4{
+      font-size: 17px;
+    }
 }
+
+
+
 
 img {
    max-width: 100%;
